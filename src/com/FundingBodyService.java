@@ -17,12 +17,12 @@ import model.FundingBodyM;
 @Path("FundingBodies")
 public class FundingBodyService {
 
-	//Read all Researchers in  XML Format
+	//Read all FundingBodies in  XML Format
 		FundingBody rs = new FundingBody();
 		@Path("/Dxml")
 		@GET
 		@Produces({MediaType.APPLICATION_XML,MediaType.APPLICATION_JSON})
-		public List<FundingBodyM> getResearchers()
+		public List<FundingBodyM> getFundingBodies()
 		 {
 			System.out.println("Loading FundingBody..");
 			return rs.getFundingBodies();
@@ -41,7 +41,7 @@ public class FundingBodyService {
 			@GET
 			@Path("/")
 			@Produces(MediaType.TEXT_HTML)
-			public String getReasercherTable()
+			public String getFundingBodyTable()
 			 {
 				
 				System.out.println("Loading Reasearcher Table..");
@@ -67,7 +67,7 @@ public class FundingBodyService {
 			@PUT
 			@Path("/")
 			@Consumes({MediaType.TEXT_PLAIN,MediaType.APPLICATION_XML,MediaType.APPLICATION_JSON})
-			public String updateReasercher(FundingBodyM d1) {
+			public String updateFundingBody(FundingBodyM d1) {
 				String output ="";
 				System.out.println(d1);
 				if(rs.getFundingBody(d1.getId()).getId()==0) {

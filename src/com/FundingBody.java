@@ -94,7 +94,7 @@ public class FundingBody {
 			if (con == null) {
 				// return "Error while connecting to the database for updating";
 			}
-			String sql = "insert into researcher values(?,?,?,?,?,?)";
+			String sql = "insert into fundingbody values(?,?,?,?,?,?)";
 
 			PreparedStatement st = con.prepareStatement(sql);
 
