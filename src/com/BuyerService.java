@@ -18,7 +18,7 @@ import model.BuyerTNM;
 
 
 public class BuyerService {
-	//Read all Researchers in  XML Format
+	//Read all Buyers in  XML Format
 	Buyer rs = new Buyer();
 	
 	@Path("/Dxml")
@@ -29,7 +29,7 @@ public class BuyerService {
 		System.out.println("Loading Buyer..");
 		return rs.getBuyers();
 	 } 
-	//Read a Researcher using ID
+	//Read a Buyer using ID
 	@GET
 	@Path("/{id}")
 	@Produces({MediaType.APPLICATION_XML,MediaType.APPLICATION_JSON})

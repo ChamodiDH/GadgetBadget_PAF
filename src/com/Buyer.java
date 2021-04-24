@@ -169,7 +169,7 @@ public class Buyer {
 					if (con == null) {
 						// return "Error while connecting to the database for updating";
 					}
-					String sql = "select * from researcher ";
+					String sql = "select * from buyer ";
 
 					Statement st = con.createStatement();
 					ResultSet rs = st.executeQuery(sql);
