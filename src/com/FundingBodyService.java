@@ -37,7 +37,7 @@ public class FundingBodyService {
 				return rs.getFundingBody(id);
 			 } 
 			
-			//Read all Researchers in HTML Table
+			//Read all FundingBodies in HTML Table
 			@GET
 			@Path("/")
 			@Produces(MediaType.TEXT_HTML)
