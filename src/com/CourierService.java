@@ -29,7 +29,7 @@ public class CourierService {
 		@Produces({MediaType.APPLICATION_XML,MediaType.APPLICATION_JSON})
 		public List<Courier_dt> getCouriers()
 		 {
-			System.out.println("Loading Researcher..");
+			System.out.println("Loading Courier..");
 			return rs.getCouriers();
 		 } 
 		//Read a Courier using ID
@@ -49,7 +49,7 @@ public class CourierService {
 		public String getCourierTable()
 		 {
 			
-			System.out.println("Loading Reasearcher Table..");
+			System.out.println("Loading Courier Table..");
 			return rs.getCourierTable();
 		 }
 		

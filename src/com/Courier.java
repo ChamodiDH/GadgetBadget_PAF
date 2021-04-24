@@ -12,7 +12,7 @@ public class Courier {
 
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/gadgetbadgetdb", "root", "123qwebnm");
+			con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/gadgetbadgetdb", "root", "hashini123");
 			// For testing
 			System.out.print("Successfully connected");
 		} catch (Exception e) {
@@ -33,7 +33,7 @@ public class Courier {
 				// return "Error while connecting to the database for updating";
 			}
 
-			String sql = "select * from courier ";
+			String sql = "select * from courier";
 
 			Statement st = con.createStatement();
 			ResultSet rs = st.executeQuery(sql);
@@ -98,7 +98,7 @@ public class Courier {
 			if (con == null) {
 				// return "Error while connecting to the database for updating";
 			}
-			String sql = "select * from researcher where id =" + id;
+			String sql = "select * from courier where id =" + id;
 
 			Statement st = con.createStatement();
 			ResultSet rs = st.executeQuery(sql);
@@ -204,7 +204,7 @@ public class Courier {
 			if (con == null) {
 				// return "Error while connecting to the database for updating";
 			}
-			String sql = "select * from courier ";
+			String sql = "select * from courier";
 
 			Statement st = con.createStatement();
 			ResultSet rs = st.executeQuery(sql);
