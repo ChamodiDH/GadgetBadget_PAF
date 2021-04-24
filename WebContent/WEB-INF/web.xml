@@ -8,10 +8,6 @@
  <load-on-startup>1</load-on-startup>
 </servlet>
 
-<servlet-mapping>
- <servlet-name>Jersey Web Application</servlet-name>
- <url-pattern>/Testpro/*</url-pattern>
-</servlet-mapping>
 
 <servlet-mapping>
  <servlet-name>Jersey Web Application</servlet-name>
@@ -35,6 +31,7 @@
 
 
 <welcome-file-list>
+
     <welcome-file>index.html</welcome-file>
     <welcome-file>index.htm</welcome-file>
     <welcome-file>index.jsp</welcome-file>
